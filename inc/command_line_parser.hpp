@@ -13,8 +13,8 @@ public:
     CommandLineParser(int argc, char *argv[]);
     ~CommandLineParser();
 
-    bool isOptionSet(char short_opt);
-    bool isOptionSet(char short_opt, std::string long_opt);
+    bool isOptionSet(const char short_opt);
+    bool isOptionSet(const char short_opt, const std::string long_opt);
 
     bool getParameter(char short_opt, std::string long_opt, std::string& parameter);
     bool getParameter(char short_opt, std::string long_opt, int& parameter);
